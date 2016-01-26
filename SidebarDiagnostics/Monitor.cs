@@ -666,8 +666,8 @@ namespace SidebarDiagnostics.Monitor
 
         public void Update()
         {
-            OutKB = string.Format("Out: {0:0.##} Kb/s", _outCounter.NextValue() / 128d);
-            InKB = string.Format("In: {0:0.##} Kb/s", _inCounter.NextValue() / 128d);
+            OutKB = string.Format("Up: {0:0.##} Kb/s", _outCounter.NextValue() / 128d);
+            InKB = string.Format("Down: {0:0.##} Kb/s", _inCounter.NextValue() / 128d);
         }
 
         public void NotifyPropertyChanged(string propertyName)
